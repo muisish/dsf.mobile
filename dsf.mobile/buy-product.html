@@ -1,0 +1,180 @@
+﻿<!DOCTYPE HTML>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/splash/splash-icon.png">
+    <link rel="apple-touch-startup-image" href="images/splash/splash-screen.png" media="screen and (max-device-width: 320px)" />  
+    <link rel="apple-touch-startup-image" href="images/splash/splash-screen@2x.png" media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" /> 
+    <link rel="apple-touch-startup-image" sizes="640x1096" href="images/splash/splash-screen@3x.png" />
+    <link rel="apple-touch-startup-image" sizes="1024x748" href="images/splash/splash-screen-ipad-landscape" media="screen and (min-device-width : 481px) and (max-device-width : 1024px) and (orientation : landscape)" />
+    <link rel="apple-touch-startup-image" sizes="768x1004" href="images/splash/splash-screen-ipad-portrait.png" media="screen and (min-device-width : 481px) and (max-device-width : 1024px) and (orientation : portrait)" />
+    <link rel="apple-touch-startup-image" sizes="1536x2008" href="images/splash/splash-screen-ipad-portrait-retina.png"   media="(device-width: 768px)	and (orientation: portrait)	and (-webkit-device-pixel-ratio: 2)"/>
+    <link rel="apple-touch-startup-image" sizes="1496x2048" href="images/splash/splash-screen-ipad-landscape-retina.png"   media="(device-width: 768px)	and (orientation: landscape)	and (-webkit-device-pixel-ratio: 2)"/>
+
+    <title>SOZO</title>
+
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/framework.css" />
+    <link rel="stylesheet" href="styles/swipebox.css" />
+    <link rel="stylesheet" href="styles/edit.css" />
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/jqueryui.js"></script>
+    <script src="scripts/jquery.swipebox.js"></script>
+    <script src="scripts/snap.js"></script>
+    <script src="scripts/custom.js"></script>
+    <script src="scripts/framework.js"></script>
+    <script src="scripts/framework.launcher.js"></script>
+
+</head>
+<body>
+
+<div id="preloader">
+	<div id="status">
+    	<p class="center-text">
+			Loading the content...
+            <em>Loading depends on your connection speed!</em>
+        </p>
+    </div>
+</div>
+
+
+<div class="all-elements">
+    <div id="sidebar" class="page-sidebar">
+        <div class="page-sidebar-scroll">
+        	<div class="sidebar-shortcuts">
+            	<a href="index.html"><img src="images/misc/logo-header.png" width="96"/></a>
+            </div>
+            
+            <div class="sidebar-logo sidebar-profile">
+                <img src="images/customers/2.png" height="52" alt="img">
+                <h3>Simon Grabowski</h3>
+            </div>
+            
+            <div class="sidebar-breadcrumb">MY SOZO</div>
+            
+            <div class="navigation-item">
+                <a href="ra-period.html" class="nav-item reload-icon">RA Period<em class="unselected-item"></em></a>
+            </div>    
+            <div class="navigation-item">
+                <a href="rank-advancement.html" class="nav-item rank-icon">Rank Advancement<em class="unselected-item"></em></a>
+            </div>
+            <div class="navigation-item">
+                <a href="earnings.html" class="nav-item money-icon">Earnings<em class="unselected-item"></em></a>
+            </div>
+            <div class="navigation-item">
+                <a href="programs.html" class="nav-item program-icon">Programs<em class="unselected-item"></em></a>
+            </div>
+            <div class="navigation-item">
+                <a href="buy.html" class="nav-item buy-icon">Buy<em class="unselected-item"></em></a>
+            </div>
+            <div class="navigation-item">
+                <a href="my-profile.html" class="nav-item user-icon">My Profile<em class="unselected-item"></em></a>
+            </div>
+            
+            <div class="sidebar-breadcrumb">HOT LIST</div>    
+            <div class="navigation-item">
+                <a href="news.html" class="nav-item news-icon">News<em class="unselected-item"></em></a>
+            </div>
+            <div class="navigation-item">
+                <a href="downline.html" class="nav-item downline-icon">My Network<em class="unselected-item"></em></a>
+            </div>
+            <div class="navigation-item">
+                <a href="prospecting.html" class="nav-item prospecting-icon">Prospecting<em class="unselected-item"></em></a>
+            </div>
+            <div class="navigation-item">
+                <a href="invitation.html" class="nav-item invitation-icon">Invitations<em class="unselected-item"></em></a>
+            </div>
+            
+            <div class="sidebar-breadcrumb">My Network</div>    
+            <div class="navigation-item">
+                <a href="signup.html" class="nav-item signup-icon">Sign Up<em class="unselected-item"></em></a>
+            </div>
+            <div class="navigation-item">
+                <a href="browse.html" class="nav-item downline-icon">Browse<em class="unselected-item"></em></a>
+            </div>
+            <div class="navigation-item">
+                <a href="my-events.html" class="nav-item event-icon">Events<em class="unselected-item"></em></a>
+            </div>
+            <div class="navigation-item">
+                <a href="prospecting.html" class="nav-item prospecting-icon">Prospecting<em class="unselected-item"></em></a>
+            </div>
+            <div class="sidebar-breadcrumb">COPYRIGHT 2014. ALL RIGHTS RESERVED!</div>
+         
+        </div>         
+    </div>
+
+
+    <div id="content" class="page-content grey"> 
+    
+    	<div class="page-header">
+        	<a href="#" class="deploy-sidebar"></a>
+            <h3 class="page-title">Buy</h3>
+        </div>
+        
+        <div class="page-header-clear"></div>
+        
+        <div class="content content-padding">
+           
+           <div class="container white-box">
+           		<h3 class="orange">Verve - 1 Pack</h3>
+                <br>
+                <select class="block">
+                	<option>1 Pack</option>
+                    <option>2 Packs</option>
+                    <option>3 Packs</option>
+                </select>
+                
+                <br>
+                <br>
+                <div align="center">
+                	<img src="images/products/product3.png" width="128"/>
+                </div>
+                <br>
+                
+                <div>
+                	<h3>386.00 PLN</h3>
+                    <p>Free Shipping</p>
+                    <p>Quantity <input type="text" class="contactField inline" value="1"></p>
+                    <p>Total: <strong>386.00 PLN</strong></p>
+                </div>
+                <br>
+                <input type="button" value="Buy Now" class="button button-fullscreen button-orange">
+           </div>
+           
+        </div>
+
+    </div> <!--/content-->     
+</div> <!--/all elements-->
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
