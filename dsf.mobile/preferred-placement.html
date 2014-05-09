@@ -1,0 +1,103 @@
+﻿<!DOCTYPE HTML>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/splash/splash-icon.png">
+    <link rel="apple-touch-startup-image" href="images/splash/splash-screen.png" media="screen and (max-device-width: 320px)" />  
+    <link rel="apple-touch-startup-image" href="images/splash/splash-screen@2x.png" media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" /> 
+    <link rel="apple-touch-startup-image" sizes="640x1096" href="images/splash/splash-screen@3x.png" />
+    <link rel="apple-touch-startup-image" sizes="1024x748" href="images/splash/splash-screen-ipad-landscape" media="screen and (min-device-width : 481px) and (max-device-width : 1024px) and (orientation : landscape)" />
+    <link rel="apple-touch-startup-image" sizes="768x1004" href="images/splash/splash-screen-ipad-portrait.png" media="screen and (min-device-width : 481px) and (max-device-width : 1024px) and (orientation : portrait)" />
+    <link rel="apple-touch-startup-image" sizes="1536x2008" href="images/splash/splash-screen-ipad-portrait-retina.png"   media="(device-width: 768px)	and (orientation: portrait)	and (-webkit-device-pixel-ratio: 2)"/>
+    <link rel="apple-touch-startup-image" sizes="1496x2048" href="images/splash/splash-screen-ipad-landscape-retina.png"   media="(device-width: 768px)	and (orientation: landscape)	and (-webkit-device-pixel-ratio: 2)"/>
+
+    <title>SOZO</title>
+
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/framework.css" />
+    <link rel="stylesheet" href="styles/swipebox.css" />
+    <link rel="stylesheet" href="styles/edit.css" />
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/jqueryui.js"></script>
+    <script src="scripts/jquery.swipebox.js"></script>
+    <script src="scripts/snap.js"></script>
+    <script src="scripts/custom.js"></script>
+    <script src="scripts/framework.js"></script>
+    <script src="scripts/framework.launcher.js"></script>
+
+
+</head>
+<body>
+
+<div id="preloader">
+	<div id="status">
+    	<p class="center-text">
+			Loading the content...
+            <em>Loading depends on your connection speed!</em>
+        </p>
+    </div>
+</div>
+
+
+<div id="content" class="page-content grey"> 
+    
+    <div class="page-header">
+        <button class="header-btn" onClick="goBack()"><span>Back</span></button>
+        <h3 class="page-title">Prefrerred Placement</h3>
+    </div>
+        
+    <div class="page-header-clear"></div>
+        
+    <div class="content content-padding">
+           
+        <div class="container">
+
+            <div class="input-wrapper">
+                <p>Prefrerred Placement</p>
+                <select>
+                    <option>Right Outside</option>
+                    <option>Left Outside</option>
+                    <option>Right Inside</option>
+                    <option>Left Inside</option>
+                </select>
+            </div>
+
+            <button class="button button-fullscreen button-green button-big">Save Changes</button>
+       </div>
+        
+    </div>
+
+</div> <!--/content-->     
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

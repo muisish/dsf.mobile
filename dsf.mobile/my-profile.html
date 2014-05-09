@@ -161,6 +161,30 @@
                 </div>
            </div>
     
+           <div class="container" onclick="editProfile()">
+                <div class="additional-info edit-profile">
+                    <div class="cell-pos">
+                        Edit Profile
+                    </div>
+                </div>
+           </div>
+
+           <div class="container" onclick="prefrerredPlacement()">
+                <div class="additional-info edit-placement">
+                    <div class="cell-pos">
+                        Prefrerred Placement
+                    </div>
+                </div>
+           </div>
+           
+           <div class="container" onclick="communications()">
+                <div class="additional-info edit-communications">
+                    <div class="cell-pos">
+                        Communications
+                    </div>
+                </div>
+           </div>
+
            <div class="container">
                 <div class="additional-info profile">
                     <div class="cell-pos">
@@ -172,7 +196,19 @@
 
     </div> <!--/content-->     
 </div> <!--/all elements-->
+<script> 
+    function editProfile() {
+        window.location = "edit-profile.html";
+    }
 
+    function prefrerredPlacement() {
+        window.location = "preferred-placement.html";
+    }
+
+    function communications() {
+        window.location = "communications.html";
+    }
+</script>
 </body>
 </html>
 

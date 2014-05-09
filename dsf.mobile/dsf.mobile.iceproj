@@ -63,6 +63,15 @@
     <Content Include="App_Resources\WP8\Tiles\Iconic\110x110.png" />
     <Content Include="App_Resources\WP8\Tiles\Iconic\202x202.png" />
     <Content Include="browse.html" />
+    <Content Include="communications.html" />
+    <Content Include="edit-communication-txtmsg.html" />
+    <Content Include="edit-communication-email.html" />
+    <Content Include="preferred-placement.html" />
+    <Content Include="edit-profile-privacy.html" />
+    <Content Include="edit-profile-businesswebsite.html" />
+    <Content Include="edit-profile-password.html" />
+    <Content Include="edit-profile-info.html" />
+    <Content Include="edit-profile.html" />
     <Content Include="buy-product.html" />
     <Content Include="buy.html" />
     <Content Include="cordova.android.js" />

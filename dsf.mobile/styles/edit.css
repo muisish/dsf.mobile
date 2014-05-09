@@ -1,8 +1,9 @@
 ﻿@charset "utf-8";
 html, body {height:100%;}
 body, p{font-size:14px;}
-*, *:before, *:after {-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
-.all-elements, .page-content{/*min-height: 100%;*/ overflow-y:auto;}
+/**, *:before, *:after {-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}*/
+.all-elements, .page-content{ /*min-height: 100%;*/overflow-y: auto;}
+.page-content{min-height:0;}
 .page-content.grey{background:#ECECEC;}
 .table-pos{display:table; height:100%;}
 .cell-pos{display:table-cell; vertical-align:middle;}
@@ -113,6 +114,9 @@ table th{padding:10px 15px 10px 15px}
 .additional-info p{margin-bottom:5px;}
 .additional-info p a{color:#FFF;}
 .additional-info.profile{background-image:url(../images/icons/user/user2.png); background-color:#5DA1CC;}
+.additional-info.edit-profile{background-image:url(../images/icons/tools/fountainpen.png); background-color:#5DA1CC;}
+.additional-info.edit-placement{background-image:url(../images/icons/location/marker.png); background-color:#5DA1CC;}
+.additional-info.edit-communications{background-image:url(../images/icons/communication/speechbubble4.png); background-color:#5DA1CC;}
 
 .progress-normal{background:#8DC63E;}
 .progress-danger{background:#ee1a24;}
@@ -123,7 +127,8 @@ ul.listview{list-style-type:none; border:1px solid #ccc; background:#FFF; border
 .listview li a:hover, .listview li a:active{background-color:#E7E7E7;}
 .listview li:last-child a{border-bottom:none;}
 .listview.image li a{padding-left:48px; padding-top:15px; padding-bottom:15px; background:url(../images/misc/orange-circle.png) 5px center no-repeat transparent;}
-.listview.arrow li {background:url(../images/misc/nav-submenu.png) 97% center no-repeat transparent;}
+.listview.arrow li a{background:url(../images/misc/nav-submenu.png) 97% center no-repeat transparent;}
+.listview.arrow li a:hover{background-color:#E7E7E7;}
 .listview.image li.up a{background-image:url(../images/misc/blue-arrow-up.png);}
 .listview.image li.up-orange a{background-image:url(../images/misc/orange-arrow-up.png);}
 
@@ -142,6 +147,43 @@ ul.listview{list-style-type:none; border:1px solid #ccc; background:#FFF; border
 .invitation-detail .seat{background-image:url(../images/icons/user/24-user.png);}
 .invitation-detail .name{background-image:url(../images/icons/tools/24-pencil.png);}
 .invitation-detail .right .nav{position:absolute; background:url(../images/misc/nav-submenu.png); width:16px; height:16px; top:50%; margin-top:-8px; right:5px;}
+
+.invitation-detail.profile-info .left
+{
+    width:40%;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow:hidden;
+}
+.invitation-detail.profile-info .right
+{
+    width:60%;
+}
+.input-wrapper
+{
+    margin-bottom:20px;
+}
+.input-wrapper select, .input-wrapper textarea
+{
+    width:100%;
+}
+.input-wrapper textarea
+{
+    padding:10px;
+    background-color:rgba(255, 255, 255, 0.4);
+    border:solid 1px #CACACA;
+
+}
+
+.togglebox input{ display:none; }
+.togglebox{ display:inline-block; border:1px solid #BBB; width:90px; height:30px; position:relative; border-radius:20px; color:#FFF; font-weight:bold; overflow:hidden; box-shadow:0 1px 0 #CCC; }
+.togglebox label{ width:200%; height:100%; line-height:30px; border-radius:0.4em; position:absolute; top:0; left:0; z-index:1; font-size:1.1em; cursor:pointer; -webkit-transition:0.12s; -moz-transition:0.12s; transition:0.12s; }
+.togglebox span{ position:absolute; right:-100px; }			
+.togglebox label::before{ content:'Yes'; width:74px; float:left; margin-right:-16px; padding-right:13px; text-align:center; background:#007FEA; text-shadow:0 -1px 0px #093B5C; box-shadow:0 4px 5px -2px rgba(0,0,0,0.3) inset; }
+.togglebox label b{ display:block; height:100%; width:30px; float:left; position:relative; z-index:1; border:1px solid #AAA; background:#F6F6F6; box-shadow:0 4px 0 -2px #F1F1F1 inset, 0 2em 2em -2em #AAA inset, 0 0 2px rgba(0,0,0,.5); border-radius:20px; }
+.togglebox label:hover b{ background:#E5E5E5; }
+.togglebox label::after{ content:'No'; width:74px; float:left; margin-left:-15px; padding-left:13px; text-align:center; color:#999; background:#FFF; box-shadow:0 4px 5px -2px rgba(0,0,0,0.3) inset; }			
+.togglebox input:checked ~ label{ left:-60px; }
 
 .header-btn{
 	background:#FFA500;
